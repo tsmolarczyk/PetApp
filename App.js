@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import LoginView from "./views/LoginView";
 import WelcomeView from "./views/WelcomeView";
+import DogDetailsView from "./views/DogDetailsView";
+import ChatView from "./views/ChatView";
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +16,8 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen name="Login" component={LoginView} />
         <Stack.Screen name="Welcome" component={WelcomeView} />
+        <Stack.Screen name="DogDetails" component={DogDetailsView} />
+        <Stack.Screen name="Chat" component={ChatView} />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
