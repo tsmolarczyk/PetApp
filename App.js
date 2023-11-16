@@ -7,6 +7,7 @@ import LoginView from "./views/LoginView";
 import WelcomeView from "./views/WelcomeView";
 import DogDetailsView from "./views/DogDetailsView";
 import ChatView from "./views/ChatView";
+import MapView from "./views/MapView";
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +19,7 @@ export default function App() {
         <Stack.Screen name="Welcome" component={WelcomeView} />
         <Stack.Screen name="DogDetails" component={DogDetailsView} />
         <Stack.Screen name="Chat" component={ChatView} />
+        <Stack.Screen name="Map" component={MapView} />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
